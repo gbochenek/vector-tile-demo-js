@@ -1,0 +1,67 @@
+body {
+	font-family: Arial;
+}
+
+.flight-style-btn-grp {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.flight-style-btn {
+	height: 146px;
+	width: 68px;
+	display: inline-block;
+	cursor: pointer;
+	margin: 1px;
+}
+
+.flight-style-btn.active {
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	margin:0px;
+}
+
+.flight-style-btn.red {
+	background-image: url('../img/1_RedStyle.png');
+}
+
+.flight-style-btn.orange {
+	background-image: url('../img/2_OrangeStyle.png');
+}
+
+.flight-style-btn.green {
+	background-image: url('../img/3_GreenStyle.png');
+}
+
+.flight-style-btn.blue {
+	background-image: url('../img/4_BlueStyle.png');
+}
+
+.flight-style-btn.pink {
+	background-image: url('../img/5_PinkStyle.png');
+}
+
+.flight-style-btn.white {
+	background-image: url('../img/6_WhiteStyle.png');
+}
+
+.airportSelector {
+	position: absolute;
+    top: 200px;
+    right: 20px;
+    width: 245px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.color-selector {
+	position:absolute;
+	bottom:20px;
+	right:20px;
+}
