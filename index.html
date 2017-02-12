@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"
+  />
+  <title>Vector tiles - 4.2</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.2/esri/css/main.css">
+  <link rel="stylesheet" href="css/flat/flat.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://js.arcgis.com/4.2/"></script>
+
+  <script src="js/color.all.min.js"></script>
+  <script src="js/vectorTileDemo.js"></script>
+</head>
+<body class="flat">
+  <div id="viewDiv">
+  <div class="flight-style-btn-grp">
+      <span class="flight-style-btn red active"></span>
+      <span class="flight-style-btn orange"></span>
+      <span class="flight-style-btn green"></span>
+      <span class="flight-style-btn blue"></span>
+      <span class="flight-style-btn pink"></span>
+      <span class="flight-style-btn white"></span>
+    </div>
+    <div class="airportSelector">
+      Show Traffic Originating From: <div id="airportSelector"></div>
+    </div>
+    <div class="color-selector" id="colorSelector">
+    </div>
+  </div>
+</body>
+</html>

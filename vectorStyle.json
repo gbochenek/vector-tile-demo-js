@@ -1,0 +1,27 @@
+{
+	"version": 8,
+	"sprite": "https://tiles.arcgis.com/tiles/hRUr1F8lE8Jq2uJo/arcgis/rest/services/GlobalFlightRoutes/VectorTileServer/resources/sprites/sprite",
+	"glyphs": "https://tiles.arcgis.com/tiles/hRUr1F8lE8Jq2uJo/arcgis/rest/services/GlobalFlightRoutes/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf",
+	"sources": {
+		"esri": {
+			"type": "vector",
+			"url": "https://tiles.arcgis.com/tiles/hRUr1F8lE8Jq2uJo/arcgis/rest/services/GlobalFlightRoutes/VectorTileServer/"
+		}
+	},
+	"layers": [{
+			"id": "Flight_Routes",
+			"type": "line",
+			"source": "esri",
+			"source-layer": "Flight_Routes",
+			"layout": {
+				"line-cap": "round",
+				"line-join": "round"
+			},
+			"paint": {
+				"line-color": "rgba(175,18,18,0.2)",
+				"line-width": 1
+			}
+		}
+	]
+}
+
