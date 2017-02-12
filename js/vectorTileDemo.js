@@ -37,7 +37,7 @@
                         {name:"SHANGHAI, CN (PVG)",id:"PVG"},
                         {name:"AMSTERDAM, NL (AMS)",id:"AMS"},
                         {name:"NEW YORK NY, US (JFK)",id:"JFK"},
-                        {name:"Washington D.C. (DCA)", "DCA"},
+                        {name:"Washington D.C. (DCA)",id: "DCA"},
                         {name:"SINGAPORE, SG (SIN)",id:"SIN"},
                         {name:"GUANGZHOU, CN (CAN)",id:"CAN"},
                         {name:"JAKARTA, ID (CGK)",id:"CGK"},
