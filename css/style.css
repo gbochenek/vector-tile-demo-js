@@ -13,7 +13,9 @@ body {
 	width: 68px;
 	display: inline-block;
 	cursor: pointer;
-	margin: 1px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
 }
 
 .flight-style-btn.red {
