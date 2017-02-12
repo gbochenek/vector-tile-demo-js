@@ -16,13 +16,6 @@ body {
 	margin: 1px;
 }
 
-.flight-style-btn.active {
-	border-color: white;
-	border-width: 1px;
-	border-style: solid;
-	margin:0px;
-}
-
 .flight-style-btn.red {
 	background-image: url('../img/1_RedStyle.png');
 }
