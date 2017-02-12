@@ -12,12 +12,12 @@
       var fromButton = true;
 
       var colorMap = {
-        "red": "rgba(175,18,18,0.2)",
-        "orange": "rgba(243,174,24,0.2)",
-        "green": "rgba(108,236,62,0.2)",
-        "blue": "rgba(96,205,255,0.2)",
-        "pink": "rgba(255,127,255,0.2)",
-        "white": "rgba(240,240,240,0.2)"
+        "red": "rgba(175,18,18,0.02)",
+        "orange": "rgba(243,174,24,0.02)",
+        "green": "rgba(108,236,62,0.02)",
+        "blue": "rgba(96,205,255,0.02)",
+        "pink": "rgba(255,127,255,0.02)",
+        "white": "rgba(240,240,240,0.02)"
       };
 
       var airportStore = new Memory({data:[
