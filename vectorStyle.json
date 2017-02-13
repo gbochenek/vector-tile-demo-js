@@ -18,7 +18,7 @@
 				"line-join": "round"
 			},
 			"paint": {
-				"line-color": "rgba(175,18,18,0.2)",
+				"line-color": "rgba(96,205,255,0.05)",
 				"line-width": 1
 			}
 		}
