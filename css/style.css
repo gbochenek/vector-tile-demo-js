@@ -60,3 +60,7 @@ body {
 	bottom:20px;
 	right:20px;
 }
+
+.flat .dijitComboBoxMenu {
+	height:300px;
+}
