@@ -64,6 +64,9 @@
       var view = new MapView({
         container: "viewDiv",
         map: map,
+        ui: {
+          components: ["attribution"]
+        },
         extent: new Extent({"xmin":-19411336.207071934,"ymin":-3404810.987934027,"xmax":9118631.726305947,"ymax":10801469.341031915,"spatialReference": 102100})
       });
 
