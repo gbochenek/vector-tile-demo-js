@@ -14,9 +14,7 @@
 
 
       var checkViewPort = function(){
-        console.log("Test");
         var vs = win.getBox();
-        console.log(vs.w,vs.h);
         if (vs.w < 600 || vs.h < 630 || (vs.h < 750 && vs.w < 1000)){
           domClass.add(document.body,"mobile");
         } else {
