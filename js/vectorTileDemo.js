@@ -1,14 +1,31 @@
  require([
       "dojo/_base/lang",
       "dojo/query",
+      "dojo/window",
       "dojo/dom-class",
       "dojo/store/Memory",
-      "dijit/form/FilteringSelect",
+      "dojo/data/ObjectStore",
+      "dijit/form/Select",
       "esri/Map",
       "esri/views/MapView",
       "esri/geometry/Extent",
       "esri/layers/VectorTileLayer",
-    ], function(lang, query, domClass, Memory,  FilteringSelect, Map, MapView, Extent, VectorTileLayer) {
+    ], function(lang, query, win, domClass, Memory,  ObjectStore, FilteringSelect, Map, MapView, Extent, VectorTileLayer) {
+
+
+      var checkViewPort = function(){
+        console.log("Test");
+        var vs = win.getBox();
+        console.log(vs.w,vs.h);
+        if (vs.w < 600 || vs.h < 630 || (vs.h < 750 && vs.w < 1000)){
+          domClass.add(document.body,"mobile");
+        } else {
+          domClass.remove(document.body,"mobile");
+        }
+      }
+      window.onresize = checkViewPort;
+      checkViewPort();
+      
       var fromButton = true;
 
       var colorMap = {
@@ -67,7 +84,7 @@
         ui: {
           components: ["attribution"]
         },
-        extent: new Extent({"xmin":-19411336.207071934,"ymin":-3404810.987934027,"xmax":9118631.726305947,"ymax":10801469.341031915,"spatialReference": 102100})
+        extent: new Extent({xmin: -13047304.484756596, ymin: 736470.7675274275, xmax: -9016321.361110613, ymax: 7898314.569733398,"spatialReference": 102100})
       });
 
       /********************************************************************  
@@ -86,8 +103,8 @@
       window.view = view;
 
       var airportSelector = new FilteringSelect({
-        store: airportStore,
-        searchAttr: "name",
+        store: new ObjectStore({objectStore: airportStore}),
+        labelAttr: "name",
         value: "ALL_AIRPORTS",
       },"airportSelector");
 

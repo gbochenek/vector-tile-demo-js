@@ -8,6 +8,15 @@ body {
 	right: 20px;
 }
 
+.mobile .flight-style-btn-grp {
+	width:100%;
+	height: 18%;
+	top: auto;
+	right: auto;
+	bottom: 89px;
+	text-align: center;
+}
+
 .flight-style-btn {
 	height: 146px;
 	width: 68px;
@@ -16,6 +25,12 @@ body {
 	border-width: 1px;
 	border-style: solid;
 	border-color: white;
+}
+
+.mobile .flight-style-btn {
+	height: 100%;
+	width: 14.7999%;
+	background-size: 100% 100%;
 }
 
 .flight-style-btn.red {
@@ -55,10 +70,29 @@ body {
     border-style: solid;
 }
 
+.mobile .airportSelector {
+	top: auto;
+	right: auto;
+	width: 100%;
+	border-radius: 0;
+	border-width: 0;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+	bottom: 17px;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+}
+
+
 .color-selector {
 	position:absolute;
 	bottom:20px;
 	right:20px;
+}
+
+.mobile .color-selector {
+	display: none;
 }
 
 .flat .dijitComboBoxMenu {
