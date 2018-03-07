@@ -80,7 +80,7 @@ require([
 
   // Create a Map
   var map = new Map({
-    basemap: 'dark-gray'
+    basemap: 'dark-gray-vector'
   });
 
   // Make map view and bind it to the map
