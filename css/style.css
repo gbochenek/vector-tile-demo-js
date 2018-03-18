@@ -67,7 +67,21 @@ body {
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
-    border-style: solid;
+	border-style: solid;
+}
+
+.legend {
+	background-image: url(../img/TimeZoneLegend.png);
+    width: 244px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    border-top: black 1px solid;
+    padding-top: 10px;
+    background-position-y: 11px;
+    transition: height 1s ease-out;
+    height: 0;
 }
 
 .mobile .airportSelector {

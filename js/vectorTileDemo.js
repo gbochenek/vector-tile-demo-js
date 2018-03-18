@@ -12,6 +12,7 @@ require([
   "esri/layers/VectorTileLayer",
 ], function(lang, query, win, domClass, Memory,  ObjectStore, FilteringSelect, Map, MapView, Extent, VectorTileLayer) {
 
+  var singleColorStyle = null;
   var timeZoneStyle = {
     "line-color": {
       "property": "TZ_Delta",
@@ -179,9 +180,18 @@ require([
       var tileLayerStyle = tileStyle.layers[0];
 
       if (airport === "ALL_AIRPORTS"){
-        tileLayerStyle.paint = singleColorStyle;
+        query(".legend")[0].style.height = "0";
+
+        if (singleColorStyle){
+          tileLayerStyle.paint = singleColorStyle;
+        } else {
+          tileLayer.loadStyle("./vectorStyle.json")
+          return;
+        }
+
         delete tileLayerStyle.filter;
       } else {
+        query(".legend")[0].style.height = "30px";
         tileLayerStyle.filter = ["==", "Origin", airport];
         tileLayerStyle.paint = timeZoneStyle;
       }
