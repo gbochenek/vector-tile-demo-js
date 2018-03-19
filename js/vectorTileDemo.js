@@ -51,7 +51,7 @@ require([
                     {name:"DUBAI, AE (DXB)",id:"DXB"},
                     {name:"CHICAGO IL, US (ORD)",id:"ORD"},
                     {name:"TOKYO, JP (HND)",id:"HND"},
-                    {name:"LONDON, GB (LHR)",id:"LHR"},
+                    {name:"WASHINGTON D.C. (DCA)",id:"DCA"},
                     {name:"LOS ANGELES CA, US (LAX)",id:"LAX"},
                     {name:"HONG KONG, HK (HKG)",id:"HKG"},
                     {name:"PARIS, FR (CDG)",id:"CDG"},
@@ -61,7 +61,7 @@ require([
                     {name:"SHANGHAI, CN (PVG)",id:"PVG"},
                     {name:"AMSTERDAM, NL (AMS)",id:"AMS"},
                     {name:"NEW YORK NY, US (JFK)",id:"JFK"},
-                    {name:"WASHINGTON D.C. (DCA)",id:"DCA"},
+                    {name:"LONDON, GB (LHR)",id:"LHR"},
                     {name:"SINGAPORE, SG (SIN)",id:"SIN"},
                     {name:"GUANGZHOU, CN (CAN)",id:"CAN"},
                     {name:"JAKARTA, ID (CGK)",id:"CGK"},
@@ -112,7 +112,7 @@ require([
   var airportSelector = new FilteringSelect({
     store: new ObjectStore({objectStore: airportStore}),
     labelAttr: "name",
-    value: "ALL_AIRPORTS",
+    value: "ALL_AIRPORTS"
   },"airportSelector");
 
   airportSelector.startup();
